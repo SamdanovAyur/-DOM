@@ -1,0 +1,18 @@
+/* .colorred{
+    color: red;
+}
+.fat{
+    font-weight: bold;
+}
+.crossOut{
+    text-decoration: line-through;
+} */
+#elem {
+	display: none;
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+}
+#elem.active {
+	display: block;
+}
