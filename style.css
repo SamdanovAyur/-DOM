@@ -1,18 +1,18 @@
-/* .colorred{
+.colorred	{
     color: red;
 }
-.fat{
+/* .fat{
     font-weight: bold;
 }
 .crossOut{
     text-decoration: line-through;
-} */
-#elem {
-	display: none;
+}  */
+.border {
 	width: 200px;
 	height: 200px;
 	border: 1px solid green;
 }
-#elem.active {
+
+/* #elem.active {
 	display: block;
-}
+} */

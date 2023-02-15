@@ -103,10 +103,91 @@
 // 	p.classList.toggle('fat')
 // });
 
-let button = document.querySelector('#button');
-let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+// let elem = document.querySelector('#elem');
 
-button.addEventListener('click', function() {
-	elem.classList.toggle('active');
-});
+// button.addEventListener('click', function() {
+// 	elem.classList.toggle('active');
+// });
 
+//#266
+
+//#1,2,3,4,7,8,9,10
+
+// let elem = document.querySelector('#elem');
+// let previous = elem.previousElementSibling;
+// let next = elem.nextElementSibling;
+// let text = next.textContent;
+// next.textContent = previous.textContent;
+// previous.textContent = text;
+// console.log(previous);
+
+//#267
+
+// let parent = document.querySelector('#parent');
+// let elems1 = parent.querySelector('.www');
+// let elems2 = parent.querySelector('.ggg');
+
+//#269
+
+//#1,2,3
+
+// let div = document.querySelectorAll('.div');
+// let button1 = document.querySelector('.button1')
+// let button2 = document.querySelector('.button2')
+
+// button1.addEventListener('click', function(){
+// 	let num = +(button1.dataset.num);
+// 	num += 1;
+// 	button1.dataset.num = num;
+// });
+// button2.addEventListener('click', function(){
+// 	alert(button1.dataset.num)
+// });
+
+//#4
+
+// let input = document.querySelector('#elem');
+
+// input.addEventListener('blur', function(){
+// 	if(input.value != input.dataset.length){
+// 		alert('Wrong!')
+// 	}
+// });
+
+//#5
+
+// let input = document.querySelector('#elem');
+
+// input.addEventListener('blur', function(){
+// 	if(input.value.length >= input.dataset.min && input.value.length <= input.dataset.max){
+// 		alert('Right!');
+// 	}else{
+// 		alert('Wrong!');
+// 	}
+// });
+
+//#6
+
+// let apples = document.querySelector('#elem');
+// let endPrice = 0;
+
+// apples.addEventListener('click', function(){
+// 	endPrice += +apples.dataset.productPrice *
+// 	 +apples.dataset.productAmount;
+// 	 apples.textContent += endPrice;
+// });
+
+//#270
+
+// let elem = document.querySelector('#elem');
+
+// console.log(elem.firstChild);        // комментарий
+// console.log(elem.firstElementChild);
+
+//#4
+
+// let elem = document.querySelector('#elem')
+// for(let node of elem.childNodes){
+// 	console.log(node);
+// }
