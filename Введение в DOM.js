@@ -191,3 +191,222 @@
 // for(let node of elem.childNodes){
 // 	console.log(node);
 // }
+
+// №271
+
+// let li = document.querySelectorAll('li');
+// let yearSum = 0;
+// let text;
+
+// for(let elem of li){
+//     text = elem.textContent;
+//     let sum = 0;
+//     for(let num of text.split('')){
+//         sum += +num;
+//     }
+//     if(sum == 6){
+//         console.log(text);
+//         yearSum += sum;
+//     }
+// }console.log(yearSum);
+
+// #272
+
+// #1,2
+
+// let elems1 = document.querySelectorAll('.p1 p');
+// for(let elem of elems1){
+//     elem.textContent += '!';
+// }
+
+// let elems2 = document.querySelectorAll('.p2 p');
+
+// for (let elem of elems2) {
+// 	elem.addEventListener('click', function() {
+// 		// let num = elem.textContent;
+//         // Number(num) += 1;
+//         elem.textContent = +elem.textContent + 1; 
+// 	});
+// }
+
+//#3
+
+// let button = document.querySelector('button');
+// let elem   = document.querySelector('p');
+
+// button.addEventListener('click', function() {
+// 	elem.innerHTML = '<b>'+elem.innerHTML+'</b>';
+// });
+
+// №4
+
+// let button = document.querySelector('button');
+// let elems  = document.querySelectorAll('p');
+
+// button.addEventListener('click', function() {
+// 	let sum = 0;
+	
+// 	for (let elem of elems) {
+// 		sum += Number(elem.textContent);
+// 	}
+	
+// 	console.log(sum);
+// });
+
+// #5
+
+// let elems = document.querySelectorAll('p');
+
+// for (let elem of elems) {
+// 	elem.addEventListener('click', function(){
+// 		this.textContent += '!';
+// 	});
+// }
+
+// #6
+
+// let button = document.querySelector('button');
+// let elems  = document.querySelectorAll('p');
+
+// button.addEventListener('click', function() {
+// 	for (let elem of elems) {
+// 		elem.innerHTML = '<b>'+elem.innerHTML+'</b>';
+// 	}
+// });
+
+// #7
+
+// let button = document.querySelector('button');
+// let elems  = document.querySelectorAll('p');
+// let sum = 0;
+
+// for (let elem of elems) {
+// 	sum += +elem.textContent;
+// }
+// button.addEventListener('click', function() {
+// 	console.log(sum);
+// });
+
+// #8
+
+// let button = document.querySelector('button');
+// let elems  = document.querySelectorAll('input');
+// let sum = 0;
+
+
+
+// button.addEventListener('click', function() {
+// 	for (let elem of elems) {
+// 		sum += +elem.value;
+// 	}
+// 	console.log(sum);
+// });
+
+// #9
+
+// let btn  = document.querySelector('#btn');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+// let inp3 = document.querySelector('#inp3');
+
+// btn.addEventListener('click', function() {
+// 	inp3.value = +inp1.value + +inp2.value;
+// });
+
+// #10
+
+// let btn  = document.querySelector('#btn');
+// let res  = document.querySelector('#res');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+
+// btn.addEventListener('click', function() {
+// 	res.textContent = +inp1.value + +inp2.value;
+// });
+
+// #11
+
+// let inputs = document.querySelectorAll('input')
+// let button = document.querySelector('#btn')
+
+// button.addEventListener('click',function() {
+// 	for (let input of inputs) {
+// 		if (input.value == input.dataset.text) {
+// 			input.classList.add('right')
+// 		} else {
+// 			input.classList.add('wrong')
+// 		}
+// 	}
+// });
+
+// #12
+
+// let inputs = document.querySelectorAll('input')
+// let button = document.querySelector('#btn')
+
+// let texts = [
+// 	'text1',
+// 	'text2',
+// 	'text3',
+// ];
+
+// button.addEventListener('click', function() {
+// 	for (let input of inputs) {
+// 		for (let text of texts) {
+// 			if (input.value == text) {
+// 				input.classList.add('right')
+// 			} else {
+// 				input.classList.add('wrong')
+// 			}
+// 			break;
+// 		}
+// 	}
+// });
+
+// #13
+
+// let inputs = document.querySelectorAll('input');
+// let btn = document.querySelector('#btn');
+// let sum = 0;
+
+// btn.addEventListener('click', function() {
+// 	for (let input of inputs) {
+// 		sum = sum + +input.value;
+// 	}
+// 	console.log(sum);
+// });
+
+// #14
+
+// let btn  = document.querySelector('#btn');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+// let inp3 = document.querySelector('#inp3');
+
+// btn.addEventListener('click', function() {
+// 	inp3.value = +inp1.value + +inp2.value;
+// });
+
+// #15
+
+// let inp = document.querySelector('#inp');
+
+// inp.addEventListener('blur', function() {
+// 	let digits = inp.value.split('');
+// 	let sum = 0;
+	
+// 	for (let digit of digits) {
+// 		sum += +digit;
+// 	}
+	
+// 	console.log(sum);
+// });
+
+// #273 Практикум
+
+let inp = document.querySelector('input');
+let p = document.querySelector('p');
+
+inp.addEventListener('blur', function(){
+	p.textContent += inp.value;
+});
