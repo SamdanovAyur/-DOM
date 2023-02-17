@@ -404,9 +404,105 @@
 
 // #273 Практикум
 
-let inp = document.querySelector('input');
-let p = document.querySelector('p');
+// №1
 
-inp.addEventListener('blur', function(){
-	p.textContent += inp.value;
+// let inp = document.querySelector('input');
+// let p = document.querySelector('p');
+
+// inp.addEventListener('blur', function(){
+// 	p.textContent += inp.value;
+// });
+
+// №2
+
+// let inputs = document.querySelectorAll('input');
+// let p = document.querySelector('p');
+// let btn = document.querySelector('button');
+// let sum = 0;
+
+// btn.addEventListener('click', function(){
+// 	for(let inp of inputs){
+// 		sum += +inp.value;
+// 	}
+// 	p.textContent = sum;
+// });
+
+// #3
+
+// let inp =document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let sum = 0;
+// 	for(let num of inp.value.split('')){
+// 		sum += +num;
+// 	}
+// 	console.log(sum);
+// });
+
+// #4
+
+// let inp =document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let sum = 0;
+// 	for(let num of inp.value.split(',')){
+// 		sum += +num;
+// 	}
+// 	console.log((sum / (inp.value.split(',')).length));
+// });
+
+// #5
+
+// let inputs = document.querySelectorAll('input');
+
+// inputs[0].addEventListener('blur', function(){
+// 	let fio = inputs[0].value.split(' ');
+// 	let i = 1;
+// 	for(let fio2 of fio){
+// 		inputs[i++].value = fio2;
+// 	}
+// });
+
+// #6
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let fio = inp.value.split(' ');
+// 	let upFirst = [];
+// 	for(let fio2 of fio){
+// 		upFirst += fio2.slice(0,1).toUpperCase() + fio2.slice(1) + ' ';
+// 	}
+// 	inp.value = upFirst;
+// });
+
+// #7
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let fio = inp.value.split(' ');
+// 	alert(fio.length)
+// });
+
+// #8
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let data = inp.value.split('.');
+// 	inp.value = data[2] + '-' + data[1] + '-' + data[0];
+// });
+
+// #9
+
+let inp = document.querySelector('input');
+let btn = document.querySelector('button');
+
+btn.addEventListener('click', function(){
+	let str = inp.value;
+	console.log(str);
+	if(str == str.split('').reverse().join('')){
+		console.log(true);
+	}
 });
