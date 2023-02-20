@@ -537,11 +537,105 @@
 
 // #12
 
-let a = document.querySelectorAll('a');
+// let a = document.querySelectorAll('a');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	for(let aHref of a){
+// 		aHref.textContent += aHref.href;
+// 	}
+// });
+
+// #13
+
+// let a = document.querySelectorAll('a');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	for(let aHref of a){
+// 		aHref.innerHTML = aHref.innerHTML + '&rarr;';
+// 	}
+// });
+
+// #14
+
+// let p = document.querySelectorAll('p');
+
+// for(let num of p){
+// 	num.addEventListener('click', function(){
+// 		num.textContent = Number(num.textContent) ** 2;
+// 	});
+// }
+
+// #15
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	let date = new Date(inp.value.split('.').reverse().join(','));
+// 	let days = ['вс','пн','вт','ср','чт','пт','сб'];
+// 	let day = date.getDay()
+// 	alert(days[day]);
+// });
+
+// #16
+
+// let inp = document.querySelector('input');
+// let btnPlus = document.querySelector('#plus');
+// let btnMinus = document.querySelector('#minus');
+
+// btnPlus.addEventListener('click', function(){
+// 	inp.value = +inp.value + 1;
+// });
+
+// btnMinus.addEventListener('click', function(){
+// 	if(inp.value > 0){
+// 		inp.value = +inp.value - 1;
+// 	}
+// });
+
+// #17
+
+// let inp = document.querySelector('input');
+// let p = document.querySelectorAll('p');
+// let const1 = 0;
+
+// for(let num of p){
+// 	num.addEventListener('click', function(){
+// 		const1 += 1;
+// 		inp.value = const1;
+// 	});
+// }
+
+// #18
+
+// let divs = document.querySelectorAll('div');
+// let p = document.querySelector('p');
+
+// p.addEventListener('click', function(){
+// 	for(let div of divs){
+// 		p.textContent += div.textContent.substring(0, 10) + '...';
+// 	}
+// });
+
+// #19
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	if(+inp.value >= 0 & +inp.value <= 100){
+// 		inp.classList.add('colorgreen')
+// 	}else{
+// 		inp.classList.add('colorred')
+// 	}
+// });
+
+// #20
+
+let inp = document.querySelector('input');
 let btn = document.querySelector('button');
 
 btn.addEventListener('click', function(){
-	for(let aHref of a){
-		aHref.textContent += '(' + aHref.href + ')';
-	}
+	let arr = [];
+	
 });
