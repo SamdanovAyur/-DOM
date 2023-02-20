@@ -496,13 +496,52 @@
 
 // #9
 
-let inp = document.querySelector('input');
+// let inp = document.querySelector('input');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	let str = inp.value;
+// 	console.log(str);
+// 	if(str == str.split('').reverse().join('')){
+// 		console.log(true);
+// 	}else{
+// 		console.log(false);
+// 	}
+// });
+
+// #10
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('blur', function(){
+// 	nums = inp.value.split('');
+// 	for(let num of nums){
+// 		if(num == 3){
+// 			console.log(true);
+// 		}else{
+// 			console.log(false);
+// 		}
+// 	}
+// });
+
+// #11
+
+// let p = document.querySelectorAll('p');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	for(let i = 0; i <= p.length; i++){
+// 		p[i].textContent += i;
+// 	}
+// });
+
+// #12
+
+let a = document.querySelectorAll('a');
 let btn = document.querySelector('button');
 
 btn.addEventListener('click', function(){
-	let str = inp.value;
-	console.log(str);
-	if(str == str.split('').reverse().join('')){
-		console.log(true);
+	for(let aHref of a){
+		aHref.textContent += '(' + aHref.href + ')';
 	}
 });
