@@ -632,10 +632,68 @@
 
 // #20
 
-let inp = document.querySelector('input');
+// let inp = document.querySelector('input');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	let alphabet = 'qwertyuiopasdfghjklzxcvbnm';
+// 	let randomWord = '';
+// 	while(randomWord.length <= 8){
+// 		randomWord += alphabet[Math.floor(Math.random(3) * alphabet.length)];
+// 	}
+// 	inp.value = randomWord;
+// });
+
+// #21
+
+// let inp = document.querySelector('input');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+// 	let randomWord = '';
+// 	while(randomWord.length < inp.value.length){
+// 		randomWord += inp.value[Math.floor(Math.random() * inp.value.length)];
+// 	}
+// 	inp.value = randomWord;
+// });
+
+// #22
+
+// let inp = document.querySelector('input');
+// let btn = document.querySelector('button');
+// let p = document.querySelector('p');
+
+// btn.addEventListener('click', function(){
+// 	let farengeit = +inp.value;
+// 	let celc = (farengeit - 32) * 5/9;
+// 	p.textContent = celc;
+// });
+
+// #23
+
+// let inp = document.querySelector('input');
+// let btn = document.querySelector('button');
+// let p = document.querySelector('p');
+
+// btn.addEventListener('click', function(){
+// 	let factor = 1
+// 	for(let i = 2; i <= +inp.value; i++){
+// 		factor = factor * i;
+// 	}
+// 	p.textContent = factor;
+// });
+
+// №24
+
+let a = document.querySelector('#a');
+let b = document.querySelector('#b');
+let c = document.querySelector('#c');
 let btn = document.querySelector('button');
+let p = document.querySelector('p');
 
 btn.addEventListener('click', function(){
-	let arr = [];
-	
+	let dickr = (Number(b) ** 2) - (4 * Number(a) * Number(c));
+	let x1 = (-Number(b) + Math.sqrt(dickr))/2*Number(a);
+	let x2 = (-Number(b) - Math.sqrt(dickr))/2*Number(a);
+	p.textContent = x1 + ' ' + x2;
 });
