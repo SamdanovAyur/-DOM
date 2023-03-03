@@ -685,15 +685,15 @@
 
 // №24
 
-let a = document.querySelector('#a');
-let b = document.querySelector('#b');
-let c = document.querySelector('#c');
-let btn = document.querySelector('button');
-let p = document.querySelector('p');
+// let a = document.querySelector('#a');
+// let b = document.querySelector('#b');
+// let c = document.querySelector('#c');
+// let btn = document.querySelector('button');
+// let p = document.querySelector('p');
 
-btn.addEventListener('click', function(){
-	let dickr = (Number(b) ** 2) - (4 * Number(a) * Number(c));
-	let x1 = (-Number(b) + Math.sqrt(dickr))/2*Number(a);
-	let x2 = (-Number(b) - Math.sqrt(dickr))/2*Number(a);
-	p.textContent = x1 + ' ' + x2;
-});
+// btn.addEventListener('click', function(){
+// 	let dickr = (Number(b) ** 2) - (4 * Number(a) * Number(c));
+// 	let x1 = (-Number(b) + Math.sqrt(dickr))/2*Number(a);
+// 	let x2 = (-Number(b) - Math.sqrt(dickr))/2*Number(a);
+// 	p.textContent = x1 + ' ' + x2;
+// });
