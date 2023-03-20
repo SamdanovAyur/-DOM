@@ -86,13 +86,93 @@
 
 // #1
 
-let radios = document.querySelectorAll('input[type="radio"]');
-let button = document.querySelector('#button');
+// let radios = document.querySelectorAll('input[type="radio"]');
+// let button = document.querySelector('#button');
 
-button.addEventListener('click', function() {
-	for (let radio of radios) {
-		if (radio.checked) {
-			console.log(radio.value);
-		}
-	}
-});
+// button.addEventListener('click', function() {
+// 	for (let radio of radios) {
+// 		if (radio.checked) {
+// 			console.log(radio.value);
+// 		}
+// 	}
+// });
+
+// #279
+
+// #1
+
+
+// let elem = document.querySelector('#elem');
+// let p = document.querySelector('p');
+
+// elem.addEventListener('change', function() {
+// 	p.textContent = this.value
+// });
+
+// #2
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('change', function(){
+// 	console.log(inp.checked);
+// });
+
+// #3
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('change', function(){
+// 	if(+inp.value < 5){
+// 		inp.style.border = '1px solid green';
+// 	}
+// 	if(+inp.value > 5){
+// 		inp.style.border = '1px solid red';
+// 	}
+// });
+
+// #280
+
+// #1
+
+// let inp = document.querySelector('input');
+
+// inp.addEventListener('input', function(){
+// 	if(inp.value.length >= 5){
+// 		alert('sadasd');
+// 	}
+// });
+
+// #2
+
+// let inp = document.querySelector('input');
+// let p = document.querySelector('p');
+
+// inp.addEventListener('input', function(){
+// 	if(inp.value.length >= 5){
+// 		p.textContent = 'превышено на ' + (inp.value.length - 5);
+// 	}
+// });
+
+// #281
+
+// #1
+
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+
+// inp1.addEventListener('input', function(){
+// 	if(inp1.value.length >= 2){
+// 		inp2.focus();
+// 	}
+// });
+
+// inp2.addEventListener('input', function(){
+// 	if(inp2.value.length >= 2){
+// 		inp2.blur();
+// 	}
+// });
+
+// #282
+
+// #1
+
