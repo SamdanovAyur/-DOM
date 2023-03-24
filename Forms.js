@@ -55,171 +55,231 @@
 // });
 // btn2.addEventListener('click', function(){
 //     inp.checked = false;
-// });
+});
 
-// #2
+#2
 
-// let inp = document.querySelector('input');
-// let btn1 = document.querySelector('button');
-// let p = document.querySelector('p');
+let inp = document.querySelector('input');
+let btn1 = document.querySelector('button');
+let p = document.querySelector('p');
 
-// btn1.addEventListener('click', function(){
-//     if(inp.checked == true){
-//         p.textContent = 'Hello';
-//     }else{
-//         p.textContent = 'FuckYou';
-//     }
-// });
+btn1.addEventListener('click', function(){
+    if(inp.checked == true){
+        p.textContent = 'Hello';
+    }else{
+        p.textContent = 'FuckYou';
+    }
+});
 
-// #277
+#277
 
-// #1
+#1
 
-// let inp = document.querySelector('input');
-// let btn1 = document.querySelector('button');
+let inp = document.querySelector('input');
+let btn1 = document.querySelector('button');
 
-// btn1.addEventListener('click', function(){
-//     inp.checked = !inp.checked;
-// });
+btn1.addEventListener('click', function(){
+    inp.checked = !inp.checked;
+});
 
-// #278
+#278
 
-// #1
+#1
 
-// let radios = document.querySelectorAll('input[type="radio"]');
-// let button = document.querySelector('#button');
+let radios = document.querySelectorAll('input[type="radio"]');
+let button = document.querySelector('#button');
 
-// button.addEventListener('click', function() {
-// 	for (let radio of radios) {
-// 		if (radio.checked) {
-// 			console.log(radio.value);
-// 		}
-// 	}
-// });
+button.addEventListener('click', function() {
+	for (let radio of radios) {
+		if (radio.checked) {
+			console.log(radio.value);
+		}
+	}
+});
 
-// #279
+#279
 
-// #1
+#1
 
 
-// let elem = document.querySelector('#elem');
-// let p = document.querySelector('p');
+let elem = document.querySelector('#elem');
+let p = document.querySelector('p');
 
-// elem.addEventListener('change', function() {
-// 	p.textContent = this.value
-// });
+elem.addEventListener('change', function() {
+	p.textContent = this.value
+});
 
-// #2
+#2
 
-// let inp = document.querySelector('input');
+let inp = document.querySelector('input');
 
-// inp.addEventListener('change', function(){
-// 	console.log(inp.checked);
-// });
+inp.addEventListener('change', function(){
+	console.log(inp.checked);
+});
 
-// #3
+#3
 
-// let inp = document.querySelector('input');
+let inp = document.querySelector('input');
 
-// inp.addEventListener('change', function(){
-// 	if(+inp.value < 5){
-// 		inp.style.border = '1px solid green';
-// 	}
-// 	if(+inp.value > 5){
-// 		inp.style.border = '1px solid red';
-// 	}
-// });
+inp.addEventListener('change', function(){
+	if(+inp.value < 5){
+		inp.style.border = '1px solid green';
+	}
+	if(+inp.value > 5){
+		inp.style.border = '1px solid red';
+	}
+});
 
-// #280
+#280
 
-// #1
+#1
 
-// let inp = document.querySelector('input');
+let inp = document.querySelector('input');
 
-// inp.addEventListener('input', function(){
-// 	if(inp.value.length >= 5){
-// 		alert('sadasd');
-// 	}
-// });
+inp.addEventListener('input', function(){
+	if(inp.value.length >= 5){
+		alert('sadasd');
+	}
+});
 
-// #2
+#2
 
-// let inp = document.querySelector('input');
-// let p = document.querySelector('p');
+let inp = document.querySelector('input');
+let p = document.querySelector('p');
 
-// inp.addEventListener('input', function(){
-// 	if(inp.value.length >= 5){
-// 		p.textContent = 'превышено на ' + (inp.value.length - 5);
-// 	}
-// });
+inp.addEventListener('input', function(){
+	if(inp.value.length >= 5){
+		p.textContent = 'превышено на ' + (inp.value.length - 5);
+	}
+});
 
-// #281
+#281
 
-// #1
+#1
 
-// let inp1 = document.querySelector('#inp1');
-// let inp2 = document.querySelector('#inp2');
+let inp1 = document.querySelector('#inp1');
+let inp2 = document.querySelector('#inp2');
 
-// inp1.addEventListener('input', function(){
-// 	if(inp1.value.length >= 2){
-// 		inp2.focus();
-// 	}
-// });
+inp1.addEventListener('input', function(){
+	if(inp1.value.length >= 2){
+		inp2.focus();
+	}
+});
 
-// inp2.addEventListener('input', function(){
-// 	if(inp2.value.length >= 2){
-// 		inp2.blur();
-// 	}
-// });
+inp2.addEventListener('input', function(){
+	if(inp2.value.length >= 2){
+		inp2.blur();
+	}
+});
 
-// #282
+#282
 
-// #1
+#1
 
-// let select = document.querySelector('select');
-// let p = document.querySelector('p');
-// let btn = document.querySelector('button');
+let select = document.querySelector('select');
+let p = document.querySelector('p');
+let btn = document.querySelector('button');
 
-// btn.addEventListener('click', function(){
-//     p.textContent = select.value;
-// });
+btn.addEventListener('click', function(){
+    p.textContent = select.value;
+});
 
-// #2
+#2
 
-// let select = document.querySelector('select');
+let select = document.querySelector('select');
 
-// select.addEventListener('change', function(){
-//     if(select.value == 2020 || select.value == 2024 || select.value == 2028){
-//         alert('visokos');
-//     }
-// });
+select.addEventListener('change', function(){
+    if(select.value == 2020 || select.value == 2024 || select.value == 2028){
+        alert('visokos');
+    }
+});
 
-// #3
+#3
 
-// let select = document.querySelector('select');
+let select = document.querySelector('select');
 
-// select.addEventListener('change', function(){
-//     if(select.value == 1 || select.value == 7){
-//         alert('выходной');
-//     }else{
-//         alert('рабочий');
-//     }
-// });
+select.addEventListener('change', function(){
+    if(select.value == 1 || select.value == 7){
+        alert('выходной');
+    }else{
+        alert('рабочий');
+    }
+});
 
-// #283
+#283
 
-// #1
+#1
 
-// let select = document.querySelector('select');
-// let opt = document.querySelectorAll('option');
-// let date = new Date();
+let select = document.querySelector('select');
+let opt = document.querySelectorAll('option');
+let date = new Date();
 
-// window.addEventListener('click', function(){
-// 	console.log('asdasdsad');
-// 	select.value = date.getMonth();
-// });
+window.addEventListener('click', function(){
+	console.log('asdasdsad');
+	select.value = date.getMonth();
+});
 
-// #284
+#284
 
-// #1
+#1
 
+let select = document.querySelector('select');
+let inp = document.querySelector('input');
+
+inp.addEventListener('blur', function(){
+    select.selectedIndex = +inp.value;
+});
+
+#2
+
+let select = document.querySelector('select');
+
+let date = new Date();
+
+select.selectedIndex = date.getDay();
+
+#285
+
+#1
+
+let select = document.querySelector('select');
+for(let elem of select){
+    elem.textContent += elem.value;
+}
+
+#286
+
+#1   
+
+let select = document.querySelector('select');
+
+for(let elem of select){
+    if(elem.selected     == true){
+        elem.textContent += '!'; 
+    }else{
+        elem.textContent += '?'; 
+    }
+}
+
+#2
+
+let select = document.querySelector('select');
+
+function btnad(){
+    select[6].selected = true;
+}
+
+#3
+
+let select = document.querySelector('select');
+
+function btnad(){
+    console.log(select.selectedIndex)
+}
+
+#4
+let select = document.querySelector('select');
+
+function btnad(){
+    select[select.selectedIndex].textContent += '!';
+}
