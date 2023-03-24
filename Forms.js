@@ -97,111 +97,129 @@
 // 	}
 // });
 
-#279
+// #279
 
-#1
+// #1
 
 
-let elem = document.querySelector('#elem');
-let p = document.querySelector('p');
+// let elem = document.querySelector('#elem');
+// let p = document.querySelector('p');
 
-elem.addEventListener('change', function() {
-	p.textContent = this.value
-});
+// elem.addEventListener('change', function() {
+// 	p.textContent = this.value
+// });
 
-#2
+// #2
 
-let inp = document.querySelector('input');
+// let inp = document.querySelector('input');
 
-inp.addEventListener('change', function(){
-	console.log(inp.checked);
-});
+// inp.addEventListener('change', function(){
+// 	console.log(inp.checked);
+// });
 
-#3
+// #3
 
-let inp = document.querySelector('input');
+// let inp = document.querySelector('input');
 
-inp.addEventListener('change', function(){
-	if(+inp.value < 5){
-		inp.style.border = '1px solid green';
-	}
-	if(+inp.value > 5){
-		inp.style.border = '1px solid red';
-	}
-});
+// inp.addEventListener('change', function(){
+// 	if(+inp.value < 5){
+// 		inp.style.border = '1px solid green';
+// 	}
+// 	if(+inp.value > 5){
+// 		inp.style.border = '1px solid red';
+// 	}
+// });
 
-#280
+// #280
 
-#1
+// #1
 
-let inp = document.querySelector('input');
+// let inp = document.querySelector('input');
 
-inp.addEventListener('input', function(){
-	if(inp.value.length >= 5){
-		alert('sadasd');
-	}
-});
+// inp.addEventListener('input', function(){
+// 	if(inp.value.length >= 5){
+// 		alert('sadasd');
+// 	}
+// });
 
-#2
+// #2
 
-let inp = document.querySelector('input');
-let p = document.querySelector('p');
+// let inp = document.querySelector('input');
+// let p = document.querySelector('p');
 
-inp.addEventListener('input', function(){
-	if(inp.value.length >= 5){
-		p.textContent = 'превышено на ' + (inp.value.length - 5);
-	}
-});
+// inp.addEventListener('input', function(){
+// 	if(inp.value.length >= 5){
+// 		p.textContent = 'превышено на ' + (inp.value.length - 5);
+// 	}
+// });
 
-#281
+// #281
 
-#1
+// #1
 
-let inp1 = document.querySelector('#inp1');
-let inp2 = document.querySelector('#inp2');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
 
-inp1.addEventListener('input', function(){
-	if(inp1.value.length >= 2){
-		inp2.focus();
-	}
-});
+// inp1.addEventListener('input', function(){
+// 	if(inp1.value.length >= 2){
+// 		inp2.focus();
+// 	}
+// });
 
-inp2.addEventListener('input', function(){
-	if(inp2.value.length >= 2){
-		inp2.blur();
-	}
-});
+// inp2.addEventListener('input', function(){
+// 	if(inp2.value.length >= 2){
+// 		inp2.blur();
+// 	}
+// });
 
-#282
+// #282
 
-#1
+// #1
 
-let select = document.querySelector('select');
-let p = document.querySelector('p');
-let btn = document.querySelector('button');
+// let select = document.querySelector('select');
+// let p = document.querySelector('p');
+// let btn = document.querySelector('button');
 
-btn.addEventListener('click', function(){
-    p.textContent = select.value;
-});
+// btn.addEventListener('click', function(){
+//     p.textContent = select.value;
+// });
 
-#2
+// #2
 
-let select = document.querySelector('select');
+// let select = document.querySelector('select');
 
-select.addEventListener('change', function(){
-    if(select.value == 2020 || select.value == 2024 || select.value == 2028){
-        alert('visokos');
-    }
-});
+// select.addEventListener('change', function(){
+//     if(select.value == 2020 || select.value == 2024 || select.value == 2028){
+//         alert('visokos');
+//     }
+// });
 
-#3
+// #3
 
-let select = document.querySelector('select');
+// let select = document.querySelector('select');
 
-select.addEventListener('change', function(){
-    if(select.value == 1 || select.value == 7){
-        alert('выходной');
-    }else{
-        alert('рабочий');
-    }
-});
+// select.addEventListener('change', function(){
+//     if(select.value == 1 || select.value == 7){
+//         alert('выходной');
+//     }else{
+//         alert('рабочий');
+//     }
+// });
+
+// #283
+
+// #1
+
+// let select = document.querySelector('select');
+// let opt = document.querySelectorAll('option');
+// let date = new Date();
+
+// window.addEventListener('click', function(){
+// 	console.log('asdasdsad');
+// 	select.value = date.getMonth();
+// });
+
+// #284
+
+// #1
+
