@@ -1,60 +1,60 @@
-// #274 
+#274 
 
-// #1
+#1
 
-// let txtArea = document.querySelector('textarea');
-// let p = document.querySelector('p');
+let txtArea = document.querySelector('textarea');
+let p = document.querySelector('p');
 
-// txtArea.addEventListener('blur', function(){
-//     p.textContent = txtArea.value;
-// });
+txtArea.addEventListener('blur', function(){
+    p.textContent = txtArea.value;
+});
 
-// #275
+#275
 
-// #1
+#1
 
-// let inp = document.querySelector('input');
-// let btn = document.querySelector('button');
+let inp = document.querySelector('input');
+let btn = document.querySelector('button');
 
-// btn.addEventListener('click', function(){
-//     inp.disabled = false;
-// });
+btn.addEventListener('click', function(){
+    inp.disabled = false;
+});
 
-// #2
+#2
 
-// let inp = document.querySelector('input');
-// let btn1 = document.querySelector('#btn1');
-// let btn2 = document.querySelector('#btn2');
+let inp = document.querySelector('input');
+let btn1 = document.querySelector('#btn1');
+let btn2 = document.querySelector('#btn2');
 
-// btn1.addEventListener('click', function(){
-//     inp.disabled = false;
-// });
-// btn2.addEventListener('click', function(){
-//     inp.disabled = true;
-// });
+btn1.addEventListener('click', function(){
+    inp.disabled = false;
+});
+btn2.addEventListener('click', function(){
+    inp.disabled = true;
+});
 
-// #3
+#3
 
-// let inp = document.querySelector('input');
-// let btn1 = document.querySelector('button');
+let inp = document.querySelector('input');
+let btn1 = document.querySelector('button');
 
-// btn1.addEventListener('click', function(){
-//     alert(inp.disabled);
-// });
+btn1.addEventListener('click', function(){
+    alert(inp.disabled);
+});
 
-// #276
+#276
 
-// #1
+#1
 
-// let inp = document.querySelector('input');
-// let btn1 = document.querySelector('#btn1');
-// let btn2 = document.querySelector('#btn2');
+let inp = document.querySelector('input');
+let btn1 = document.querySelector('#btn1');
+let btn2 = document.querySelector('#btn2');
 
-// btn1.addEventListener('click', function(){
-//     inp.checked = true;
-// });
-// btn2.addEventListener('click', function(){
-//     inp.checked = false;
+btn1.addEventListener('click', function(){
+    inp.checked = true;
+});
+btn2.addEventListener('click', function(){
+    inp.checked = false;
 });
 
 #2
@@ -283,3 +283,41 @@ let select = document.querySelector('select');
 function btnad(){
     select[select.selectedIndex].textContent += '!';
 }
+
+#287
+
+#1
+
+let textarea = document.querySelector('textarea');
+let div = document.querySelector('div');
+
+textarea.addEventListener('blur', function() {
+	div.textContent = textarea.value;
+});
+
+#2
+
+let checkbox = document.querySelector('input');
+let button = document.querySelector('button');
+let div = document.querySelector('div');
+
+button.addEventListener('click', function() {
+	if (checkbox.checked == true) {
+		div.textContent = '111';
+	} else {
+		div.textContent = '222';
+	}
+});
+
+#3
+
+let checkbox = document.querySelector('input[type="checkbox"]');
+let button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+	if (checkbox.checked == true) {
+		console.log('+++');
+	} else {
+		console.log('---');
+	}
+});
