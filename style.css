@@ -1,21 +1,31 @@
-.colorred	{
+/* .colorred	{
     color: red;
 }
 .colorblue	{
     color: blue;
-}
+} */
 /* .fat{
     font-weight: bold;
 }
 .crossOut{
     text-decoration: line-through;
 }  */
-.border {
+/* .border {
 	width: 200px;
 	height: 200px;
 	border: 1px solid green;
-}
+} */
 
 /* #elem.active {
 	display: block;
 } */
+
+ul {
+	padding: 30px;
+	border: 1px solid red;
+}
+li {
+	list-style-type: none;
+	margin-bottom: 20px;
+	border: 1px dashed black;
+}
