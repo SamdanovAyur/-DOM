@@ -100,12 +100,33 @@
 
 // #2
 
-let inp1 = document.querySelector('#inp1');
-let inp2 = document.querySelector('#inp2');
-let href = document.querySelector('a');
-let p = document.querySelector('p');
+// let inp1 = document.querySelector('#inp1');
+// let inp2 = document.querySelector('#inp2');
+// let href = document.querySelector('a');
+// let p = document.querySelector('p');
 
-href.addEventListener('click', function(event){
-    event.preventDefault();
-    p.textContent = +inp1.value + +inp2.value;
+// href.addEventListener('click', function(event){
+//     event.preventDefault();
+//     p.textContent = +inp1.value + +inp2.value;
+// });
+
+// #300
+
+// #1
+
+let button = document.querySelector('button');
+let list   = document.querySelector('ul');
+let items  = list.querySelectorAll('li');
+
+list.addEventListener('click', function(event) {
+    let li = event.target.closest('li');
+	
+	if (li) {
+		li.innerHTML = li.innerHTML + '!';
+	}
+});
+
+button.addEventListener('click', function(){
+    let item = document.createElement('li');
+    list.appendChild(item);
 });
