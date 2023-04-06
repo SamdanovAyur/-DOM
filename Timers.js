@@ -162,7 +162,19 @@
 
 // #1
 
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function() {
+// 	setInterval(() => this.value = Number(elem.value) + 1, 1000)});
+
+// #315
+
+// #1
+
 let elem = document.querySelector('#elem');
 
 elem.addEventListener('click', function() {
-	setInterval(() => this.value = Number(elem.value) + 1, 1000)});
+	setInterval(function(self) {
+		self.value--;
+	}, 1000, this);
+});
