@@ -171,10 +171,47 @@
 
 // #1
 
-let elem = document.querySelector('#elem');
+// let elem = document.querySelector('#elem');
 
-elem.addEventListener('click', function() {
-	setInterval(function(self) {
-		self.value--;
-	}, 1000, this);
-});
+// elem.addEventListener('click', function() {
+// 	setInterval(function(self) {
+// 		self.value--;
+// 	}, 1000, this);
+// });
+
+// №316
+
+// №8
+
+// let p = document.querySelector('p');
+
+
+// let timer = setInterval(function(){
+// 	let date = new Date();
+// 	p.textContent = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+// }, 1000);
+
+// #317
+
+// #1
+
+// let p = document.querySelector('p');
+
+// setTimeout(function(){
+// 	p.textContent = "asdasdasdas";
+// }, 10000);
+
+// #2
+
+// let i = 0;
+
+// function timer(){
+// 	setTimeout(function(){
+// 		console.log(i);
+// 		i++;	
+
+// 		timer();
+// 	}, 1000);
+// }
+// timer();
+
