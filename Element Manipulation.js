@@ -98,13 +98,60 @@
 
 // ul.append(finish);
 
-let ul = document.querySelector('ul');
-let elem = document.querySelector('#elem');
+// let ul = document.querySelector('ul');
+// let elem = document.querySelector('#elem');
 
-let li = document.createElement('li');
-li.textContent = 'new';
-li.addEventListener('click', function(){
-    this.textContent += '!';
-});
+// let li = document.createElement('li');
+// li.textContent = 'new';
+// li.addEventListener('click', function(){
+//     this.textContent += '!';
+// });
 
-ul.insertBefore(li, elem);
+// ul.insertBefore(li, elem);
+
+// #324
+
+// #1
+
+// let div = document.querySelector('#elem');
+
+// let p = document.createElement('p');
+// p.textContent = '!!!';
+
+// div.insertAdjacentElement('beforeBegin', p);
+
+// #2
+
+// let div = document.querySelector('#elem');
+
+// let p = document.createElement('p');
+// p.textContent = '!!!';
+
+// div.insertAdjacentElement('afterEnd', p);
+
+// #3
+
+// let div = document.querySelector('#elem');
+
+// let p = document.createElement('p');
+// p.textContent = '!!!';
+
+// div.insertAdjacentElement('afterBegin', p);
+
+// #4
+
+// let div = document.querySelector('#elem');
+
+// let p = document.createElement('p');
+// p.textContent = '!!!';
+
+// div.insertAdjacentElement('beforeEnd', p);
+
+// #5
+
+let div = document.querySelector('#elem');
+
+let p = document.createElement('p');
+p.textContent = '!!!';
+
+div.insertAdjacentHTML('beforeBegin', '<div class="www"><p>text</p><p>text</p><input></div>');
