@@ -163,22 +163,83 @@
 
 // #2
 
-let btn = document.querySelector('button');
-let table = document.querySelector('#table');
+// let btn = document.querySelector('button');
+// let table = document.querySelector('#table');
 
-btn.addEventListener('click', function(){
-    // for (let tr of trs) {
-    //     let td = document.createElement('td');
-    //     tr.appendChild(td);
-    // }
-    let tr1 = document.createElement('tr');
-    table.appendChild(tr1);
-    let trs = document.querySelectorAll('#table tr');
+// btn.addEventListener('click', function(){
+//     // for (let tr of trs) {
+//     //     let td = document.createElement('td');
+//     //     tr.appendChild(td);
+//     // }
+//     let tr1 = document.createElement('tr');
+//     table.appendChild(tr1);
+//     let trs = document.querySelectorAll('#table tr');
 
-    for (let tr of trs) {
-        let td = document.createElement('td');
-        tr.appendChild(td);
-    }
+//     for (let tr of trs) {
+//         let td = document.createElement('td');
+//         tr.appendChild(td);
+//     }
     
-    table.appendChild(tr);
-});
+//     table.appendChild(tr);
+// });
+
+// #334
+
+// #1
+
+// let tds = document.querySelectorAll('#table td');
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', function(){
+
+//     for (let td of tds) {
+//     td.textContent = +td.textContent * 2;
+//     }
+// });
+
+// #335
+
+// #1
+
+// let btn = document.querySelector('#button');
+// let ul = document.querySelector('#parent');
+
+// btn.addEventListener('click', function(){
+//     let li = document.createElement('li');
+//     li.textContent = '!';
+//     ul.appendChild(li);
+// });
+// ul.addEventListener('click', function(event){
+//     event.target.remove();
+// });
+
+// #336
+
+// #1
+
+// let div = document.querySelector('div');
+// let a = document.querySelector('a');
+
+// a.addEventListener('click', function(event){
+//     div.remove();
+//     event.preventDefault();
+// });
+
+// #337
+
+// #1
+
+let li = document.querySelectorAll('li');
+
+for(let elem of li){
+    let remove = document.createElement('a');
+    remove.href = '';
+    remove.textContent = 'remove';
+
+    remove.addEventListener('click', function(event){
+        elem.remove();
+        event.preventDefault();
+    });
+
+    elem.appendChild(remove);
+}
