@@ -229,17 +229,44 @@
 
 // #1
 
-let li = document.querySelectorAll('li');
+// let li = document.querySelectorAll('li');
 
-for(let elem of li){
-    let remove = document.createElement('a');
-    remove.href = '';
-    remove.textContent = 'remove';
+// for(let elem of li){
+//     let remove = document.createElement('a');
+//     remove.href = '';
+//     remove.textContent = 'remove';
 
-    remove.addEventListener('click', function(event){
-        elem.remove();
-        event.preventDefault();
-    });
+//     remove.addEventListener('click', function(event){
+//         elem.remove();
+//         event.preventDefault();
+//     });
 
-    elem.appendChild(remove);
-}
+//     elem.appendChild(remove);
+// }
+
+// #2
+
+let trs = document.querySelectorAll('tr');
+
+// for(let tr of trs){
+//     let a = document.createElement('a');
+//     let td = document.createElement('td');
+//     a.href = '';
+
+//     a.textContent = 'remove';
+
+//     a.addEventListener('click', function(event){
+//         tr.remove();
+//         event.preventDefault();
+//     });
+//     td.appendChild(a);
+//     tr.appendChild(td);
+// }
+
+let btn = document.createElement('button');
+btn.textContent = 'asdsadsa';
+btn.addEventListener('click', function(){
+    for(let tr of trs){
+        tr.remove();
+    }
+});
